@@ -1,0 +1,75 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 568px;
+  background: var(--color-default);
+  padding-top: 168px;
+  h1 {
+    font-family: var(--font-title);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .inputWrapper {
+      position: relative;
+      height: fit-content;
+      margin-bottom: 32px;
+      input {
+        font-family: var(--font-default);
+        font-size: 16px;
+        font-weight: 300;
+        width: 452px;
+        height: 50px;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 24px;
+        outline: none;
+      }
+      .error {
+        position: absolute;
+        z-index: 1000;
+        left: 20px;
+        bottom: -20px;
+        font-family: var(--font-optional);
+        font-size: 12px;
+        color: red;
+      }
+    }
+    button {
+      width: 174px;
+      height: 40px;
+      border: none;
+      border-radius: 50px;
+      background: var(--color-red);
+      color: var(--color-white);
+      font-family: var(--font-default);
+      font-size: 14px;
+      transition: 0.3s;
+      &:hover {
+        width: 147px;
+        font-size: 10px;
+        // text-transform: uppercase;
+      }
+      &:active {
+        transition: none;
+        color: var(--color-red);
+        background: var(--color-white);
+      }
+    }
+    .didRequest {
+      background: var(--color-green);
+      color: var(--color-default);
+      &:active {
+        color: var(--color-default);
+        background: var(--color-green);
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.section {
+  display: flex;
+  width: 100%;
+  height: 973px;
+  .blockTitle {
+    width: 50%;
+    height: inherit;
+    padding: 110px 0 0 80px;
+    h1 {
+      font-family: var(--font-title);
+      font-size: 60px;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-green);
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 417px;
+    }
+    .links {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 60px;
+      a {
+        transition: 0.3s;
+        &:hover {
+          scale: 1.05;
+        }
+      }
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 150%;
+    }
+  }
+  .blockContent {
+    position: relative;
+    width: 50%;
+    height: inherit;
+    .content {
+      position: absolute;
+      top: 60px;
+      right: 100px;
+      width: 379px;
+      margin-bottom: 12px;
+      img {
+        width: inherit;
+        height: 810px;
+        overflow: hidden;
+      }
+      .btnBlock {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .btn {
+          width: 101px;
+          height: 43px;
+          border-radius: 50px;
+          border: 2px solid var(--color-green);
+          font-family: var(--font-optional);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          color: #7e7e7e;
+          transition: 0.3s;
+          &:hover {
+            color: var(--color-default);
+          }
+        }
+        .btnActive {
+          background: var(--color-green);
+          color: var(--color-default);
+        }
+      }
+    }
+    .snowAnimation {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 245px;
+      animation: anim 15s linear infinite;
+      @keyframes anim {
+        from {
+          rotate: 0deg;
+        }
+        to {
+          rotate: 360deg;
+        }
+      }
+    }
+  }
+}

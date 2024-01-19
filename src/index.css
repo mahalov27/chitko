@@ -1,0 +1,48 @@
+@font-face{
+  font-family: 'AGLettericaCompressedC';
+  src: url(./assets/fonts/AGLettericaCompressedC_Italic.otf);
+  src: url(./assets/fonts/AGLettericaCompressedC_Regular.otf);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-default: #1B1B1B;
+  --color-red: #F24B27;
+  --color-green: #D2F24F;
+  --color-grey: #F0F0EC;
+  --color-white: #F6F0F0;
+  --font-default: "Open Sans", sans-serif;
+  --font-title: "AGLettericaCompressedC";
+  --font-optional: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-default);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--font-default);
+}
+ul {
+  list-style: none;
+}
