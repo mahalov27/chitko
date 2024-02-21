@@ -3,6 +3,17 @@
   width: 100%;
   height: 761px;
   background: var(--color-grey);
+  .container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    width: 100vw;
+    height: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+  }
   div {
     position: absolute;
     width: 590px;

@@ -1,7 +1,7 @@
 // import { motion } from "framer-motion";
 // import mockups from "../../assets/image/mockups/mockupAbout.png"
 import styles from "./AboutUs.module.scss";
-import promo from "../../assets/video/App Presentation White Version_1finale1.mp4"
+import promo from "../../assets/video/App_Presentation_White_Version_changed.mp4"
 
 const animation = {
   hidden: {
@@ -34,8 +34,8 @@ const AboutUs = () => {
         <motion.h1 variants={animation} custom={2} className={styles.titleItemOne}>ТРЕНУЙТЕСЬ.</motion.h1>
         <motion.h1 variants={animation} custom={1} className={styles.titleItemTwo}>ПЛАНУЙТЕ.</motion.h1>
         <motion.h1 variants={animation} custom={3} className={styles.titleItemThree}>ДОСЯГАЙТЕ.</motion.h1>
-      </motion.div>
-      <div className={styles.content}>
+      </motion.div> */}
+      {/* <div className={styles.content}>
         <img src={mockups} alt="pic with two phones"/>
         <p>РАЗОМ З CHITKO</p>
       </div> */}

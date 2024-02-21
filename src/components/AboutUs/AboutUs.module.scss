@@ -1,53 +1,53 @@
 section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  // height: 676px;
+  justify-content: center;
   overflow: hidden;
+  height: calc(100vh - 94px);
   video{
-    width: 101%;
+    width: 100%;
+    scale: 1.005;
   }
-  .title {
-    position: relative;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 60px;
-    h1 {
-      position: relative;
-      z-index: 1;
-      left: 290px;
-      font-family: var(--font-title);
-      font-size: 120px;
-      font-style: italic;
-      font-weight: 400;
-      color: var(--color-red);
-      &:first-child {
-        left: 80px;
-        color: var(--color-default);
-      }
-      &:last-child {
-        left: 115px;
-        color: var(--color-green);
-      }
-    }
-  }
-  .content {
-    position: relative;
-    width: 50%;
-    img {
-      position: absolute;
-      top: 10px;
-      right: 64px;
-    }
-    p {
-      position: absolute;
-      bottom: 51px;
-      right: 110px;
-      font-size: 32px;
-      font-weight: 700;
-    }
-  }
+  // .title {
+  //   position: relative;
+  //   width: 50%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   padding-bottom: 60px;
+  //   h1 {
+  //     position: relative;
+  //     z-index: 1;
+  //     left: 290px;
+  //     font-family: var(--font-title);
+  //     font-size: 120px;
+  //     font-style: italic;
+  //     font-weight: 400;
+  //     color: var(--color-red);
+  //     &:first-child {
+  //       left: 80px;
+  //       color: var(--color-default);
+  //     }
+  //     &:last-child {
+  //       left: 115px;
+  //       color: var(--color-green);
+  //     }
+  //   }
+  // }
+  // .content {
+  //   position: relative;
+  //   width: 50%;
+  //   img {
+  //     position: absolute;
+  //     top: 10px;
+  //     right: 64px;
+  //   }
+  //   p {
+  //     position: absolute;
+  //     bottom: 51px;
+  //     right: 110px;
+  //     font-size: 32px;
+  //     font-weight: 700;
+  //   }
+  // }
 }
