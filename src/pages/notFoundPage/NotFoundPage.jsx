@@ -1,12 +1,7 @@
-import React from 'react'
+import styles from "./NotFoundPage.module.scss";
 
 const NotFoundPage = () => {
-  return (
-    <div>
-      Page Not Found
-    </div>
-  )
-}
+  return <section className={styles.section}>Page Not Found</section>;
+};
 
-export default NotFoundPage
-
+export default NotFoundPage;

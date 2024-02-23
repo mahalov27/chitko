@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import MainPage from "./pages/mainPage/MainPage";
-import NotFoundPage from "./pages/notFoundPage/notFoundPage";
+import NotFoundPage from "./pages/notFoundPage/NotFoundPage";
 
 const App = () => {
   const location= useLocation();
