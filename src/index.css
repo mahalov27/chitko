@@ -9,13 +9,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
   --color-default: #1B1B1B;
   --color-red: #F24B27;
   --color-green: #D2F24F;
+  --color-gark-green: #71832B;
   --color-grey: #F0F0EC;
+  --color-blue-grey: #648381;
   --color-white: #F6F0F0;
   --font-default: "Open Sans", sans-serif;
   --font-title: "AGLettericaCompressedC";

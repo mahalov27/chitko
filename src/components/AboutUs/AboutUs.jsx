@@ -34,8 +34,8 @@ const AboutUs = () => {
         <motion.h1 variants={animation} custom={2} className={styles.titleItemOne}>ТРЕНУЙТЕСЬ.</motion.h1>
         <motion.h1 variants={animation} custom={1} className={styles.titleItemTwo}>ПЛАНУЙТЕ.</motion.h1>
         <motion.h1 variants={animation} custom={3} className={styles.titleItemThree}>ДОСЯГАЙТЕ.</motion.h1>
-      </motion.div> */}
-      {/* <div className={styles.content}>
+      </motion.div> 
+      <div className={styles.content}>
         <img src={mockups} alt="pic with two phones"/>
         <p>РАЗОМ З CHITKO</p>
       </div> */}

@@ -5,7 +5,7 @@ const WhatWhy = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.blockWhat}>
-          <h1>ЩО ТАКЕ CHITKO?</h1>
+          <h1 id="about-us">ЩО ТАКЕ CHITKO?</h1>
           <p>
             ChitKo - це мобільний застосунок, який створений для того,<br></br>{" "}
             аби полегшити процес планування та комунікації між тренером та

@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 379px;
+  overflow: visible;
+  .imgWrapper {
+    position: relative;
+    height: 810px;
+    width: inherit;
+    img {
+      position: absolute;
+      right: 0;
+      width: fit-content;
+      height: inherit;
+      object-fit: contain;
+      overflow: hidden;
+    }
+  }
+  .btnBlock {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .btn {
+      width: 101px;
+      height: 43px;
+      border-radius: 50px;
+      border: 2px solid var(--color-green);
+      font-family: var(--font-optional);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      color: #7e7e7e;
+      transition: 0.3s;
+      &:hover {
+        color: var(--color-default);
+      }
+    }
+    .btnActive {
+      background: var(--color-green);
+      color: var(--color-default);
+    }
+  }
+}

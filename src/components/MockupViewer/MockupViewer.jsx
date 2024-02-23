@@ -1,17 +1,17 @@
 import { useState } from "react";
-import mockupIOS from "../../assets/image/mockups/mockupMainIdeaIOS.png";
-import mockupAndroid from "../../assets/image/mockups/mockupMainIdeaAndroid.png";
-import styles from "./OsWidget.module.scss";
+import styles from "./MockupViewer.module.scss"
 
-const OsWidget = () => {
+const MockupViewer = ({ mockup, styleProp }) => {
   const [isIOS, setIsIOS] = useState(true);
 
   return (
     <div className={styles.content}>
+      <div className={`${styles.imgWrapper} ${styleProp && styleProp}`}>
       <img
-        src={`${isIOS ? mockupIOS : mockupAndroid}`}
+        src={`${isIOS ? mockup.iOS : mockup.android}`}
         alt="pic of smartphone"
       />
+      </div>
       <div className={styles.btnBlock}>
         <button
           className={`${styles.btn} ${isIOS && styles.btnActive}`}
@@ -34,4 +34,4 @@ const OsWidget = () => {
   );
 };
 
-export default OsWidget;
+export default MockupViewer;

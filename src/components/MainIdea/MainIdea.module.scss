@@ -7,7 +7,7 @@
   .blockTitle {
     width: 50%;
     height: inherit;
-    padding: 110px 0 0 80px;
+    padding: 110px 80px 0 80px;
     h1 {
       font-family: var(--font-title);
       font-size: 60px;
@@ -39,49 +39,17 @@
   }
   .blockContent {
     position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     width: 50%;
     height: inherit;
-    .content {
-      position: absolute;
-      top: 60px;
-      right: 100px;
-      width: 379px;
-      margin-bottom: 12px;
-      img {
-        width: inherit;
-        height: 810px;
-        overflow: hidden;
-      }
-      .btnBlock {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        .btn {
-          width: 101px;
-          height: 43px;
-          border-radius: 50px;
-          border: 2px solid var(--color-green);
-          font-family: var(--font-optional);
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          color: #7e7e7e;
-          transition: 0.3s;
-          &:hover {
-            color: var(--color-default);
-          }
-        }
-        .btnActive {
-          background: var(--color-green);
-          color: var(--color-default);
-        }
-      }
-    }
+    padding-right: 90px;
     .snowAnimation {
       position: absolute;
       z-index: -1;
-      right: 0;
-      bottom: 245px;
+      left: 0;
+      bottom: 174px;
       animation: anim 15s linear infinite;
       @keyframes anim {
         from {
