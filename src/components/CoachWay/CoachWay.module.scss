@@ -1,0 +1,52 @@
+.section {
+  background: var(--color-red);
+  height: 100vh;
+  .container {
+    position: relative;
+    width: var(--container-width);
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 80px 0;
+    h1 {
+      font-family: var(--font-title);
+      font-size: 60px;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-white);
+      margin-bottom: 42px;
+    }
+    .brakePointLine {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 1076px;
+      height: 112px;
+      margin: 0 auto;
+      .line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 50%;
+        top: 22px;
+        transform: translateX(-50%);
+        background: var(--color-white);
+      }
+    }
+    .btnLeft,
+    .btnRight {
+      position: absolute;
+      bottom: 40px;
+      stroke: var(--color-white);
+      &:active {
+        stroke: var(--color-default);
+      }
+    }
+    .Leftbtn {
+      left: 80px;
+    }
+    .btnRight {
+      right: 80px;
+    }
+  }
+}

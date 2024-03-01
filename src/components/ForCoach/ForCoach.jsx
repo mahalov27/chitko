@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MockupViewer from "../MockupViewer/MockupViewer";
 import { SpringSvg, ButtonLeftSvg, ButtonRightSvg } from "../../assets/svg/svg";
+import Button from "../Button/Button";
 import { content } from "./content";
 import styles from "./ForCoach.module.scss";
 
@@ -26,14 +27,14 @@ const ForCoach = () => {
           </article>
           <div className={styles.actions}>
             {0 < index && (
-              <button name="decrement" onClick={handleChangePage}>
+              <Button name="decrement" handleClick={handleChangePage}>
                 <ButtonLeftSvg />
-              </button>
+              </Button>
             )}
             {content.length - 1 > index && (
-              <button name="increment" onClick={handleChangePage}>
+              <Button name="increment" handleClick={handleChangePage}>
                 <ButtonRightSvg />
-              </button>
+              </Button>
             )}
           </div>
         </div>

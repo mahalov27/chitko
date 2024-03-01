@@ -1,0 +1,15 @@
+button {
+  overflow: visible;
+  width: 85px;
+  height: 62px;
+  stroke: var(--color-red);
+  stroke-width: 2px;
+  transition: 0.3s;
+  &:hover {
+    stroke-width: 3px;
+  }
+  &:active {
+    transition: none;
+    stroke: var(--color-gark-green);
+  }
+}
