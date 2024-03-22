@@ -2,6 +2,7 @@ import AboutUs from "../../components/AboutUs/AboutUs"
 import WhatWhy from "../../components/WhatWhy/WhatWhy";
 import MainIdea from "../../components/MainIdea/MainIdea";
 import ForCoach from "../../components/ForCoach/ForCoach";
+import ForTeamMember from "../../components/ForTeamMember/ForTeamMember";
 import CoachWay from "../../components/CoachWay/CoachWay";
 import Form from "../../components/Form/Form";
 import styles from "./MainPage.module.scss";
@@ -14,6 +15,7 @@ const MainPage = () => {
       <MainIdea />
       <ForCoach />
       <CoachWay />
+      <ForTeamMember/>
       <Form />
     </div>
   );

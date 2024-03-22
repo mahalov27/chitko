@@ -1,68 +1,100 @@
-.snowflake {
+.snowflakeWrapper{
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  rotate: 90deg;
-  div {
+  height: fit-content;
+  color: var(--color-white);
+  &::before{
+    content: attr(attr);
     position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: inherit;
+  }
+  .snowflake {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45px;
-    height: 1px;
-    background: var(--color-white);
-    transition: 0.3s;
+    height: 45px;
+    rotate: 90deg;
+    div {
+      position: absolute;
+      width: 45px;
+      height: 1px;
+      background: var(--color-white);
+      transition: 0.3s;
+    }
+    div[data-attr="1"] {
+      rotate: 0deg;
+    }
+    div[data-attr="2"] {
+      rotate: 40deg;
+    }
+    div[data-attr="3"] {
+      rotate: 80deg;
+    }
+    div[data-attr="4"] {
+      rotate: 120deg;
+    }
+    div[data-attr="5"] {
+      rotate: 160deg;
+    }
+    div[data-attr="6"] {
+      rotate: 200deg;
+    }
+    div[data-attr="7"] {
+      rotate: 240deg;
+    }
+    div[data-attr="8"] {
+      rotate: 280deg;
+    }
+    div[data-attr="9"] {
+      rotate: 320deg;
+    }
+    .activeItem {
+      background: var(--color-yellow);
+    }
+    .colorMode{
+      background: var(--color-red)
+    }
   }
-  div[data-attr="1"] {
-    rotate: 0deg;
+  .activeRight {
+    animation: 1s rotateRight ease;
+    @keyframes rotateRight {
+      from {
+        rotate: 90deg;
+      }
+      to {
+        rotate: 450deg;
+      }
+    }
   }
-  div[data-attr="2"] {
-    rotate: 40deg;
-  }
-  div[data-attr="3"] {
-    rotate: 80deg;
-  }
-  div[data-attr="4"] {
-    rotate: 120deg;
-  }
-  div[data-attr="5"] {
-    rotate: 160deg;
-  }
-  div[data-attr="6"] {
-    rotate: 200deg;
-  }
-  div[data-attr="7"] {
-    rotate: 240deg;
-  }
-  div[data-attr="8"] {
-    rotate: 280deg;
-  }
-  div[data-attr="9"] {
-    rotate: 320deg;
-  }
-  .activeItem {
-    background: var(--color-yellow);
+  .activeLeft {
+    animation: 1s rotateLeft ease;
+    @keyframes rotateLeft {
+      from {
+        rotate: 90deg;
+      }
+      to {
+        rotate: -270deg;
+      }
+    }
   }
 }
-.activeRight {
-  animation: 1s rotateRight ease;
-  @keyframes rotateRight {
-    from {
-      rotate: 90deg;
-    }
-    to {
-      rotate: 450deg;
-    }
-  }
+
+.active{
+  color: yellow
 }
-.activeLeft {
-  animation: 1s rotateLeft ease;
-  @keyframes rotateLeft {
-    from {
-      rotate: 90deg;
-    }
-    to {
-      rotate: -270deg;
-    }
-  }
+.colorMode {
+  color: var(--color-default)
 }

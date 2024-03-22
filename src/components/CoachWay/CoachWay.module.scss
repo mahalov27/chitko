@@ -6,14 +6,14 @@
     width: var(--container-width);
     height: 100%;
     margin: 0 auto;
-    padding: 80px 80px 0;
+    padding: 40px 80px 0;
     h1 {
       font-family: var(--font-title);
       font-size: 60px;
       font-weight: 400;
       font-style: italic;
       color: var(--color-white);
-      margin-bottom: 42px;
+      margin-bottom: 20px;
     }
     .brakePointLine {
       position: relative;
@@ -32,6 +32,20 @@
         transform: translateX(-50%);
         background: var(--color-white);
       }
+    }
+    .content{
+        position:absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+        .widget{
+          display: flex;
+          gap: 40px;
+          height: 610px;
+          img{
+            position: relative;
+          }
+        }
     }
     .btnLeft,
     .btnRight {

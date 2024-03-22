@@ -36,6 +36,31 @@ export const SpringSvg = () => {
     </svg>
   );
 };
+export const SpringSmallOneSvg = () => {
+  return (
+    <svg
+      width="380"
+      height="348"
+      viewBox="0 0 380 348"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.0458 38.0266C100.483 6.06007 262.037 -17.9115 224.75 141.934C178.141 341.741 8.34936 320.118 82.8126 210.147C157.276 100.177 365.722 125.578 321.809 265.981C284.087 386.592 168.779 317.247 207.171 270.566C249.461 219.144 364.815 290.533 364.815 290.533"
+        stroke="#F24B27"
+        stroke-width="28.6695"
+        stroke-linecap="round"
+      />
+    </svg>
+  );
+};
+export const SpringSmallTwoSvg = () => {
+  return (
+    <svg width="571" height="385" viewBox="0 0 571 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M556.018 246.643C483.101 335.638 322.113 464.144 261.493 266.204C185.719 18.7779 384.581 -65.2261 373.057 101.881C361.533 268.987 118.124 373.363 77.0488 192.427C41.7639 36.9958 211.448 39.5564 199.16 114.789C185.623 197.662 14.5939 192.901 14.5939 192.901" stroke="#F24B27" stroke-width="28.6695" stroke-linecap="round"/>
+    </svg>
+  );
+};
 
 export const ButtonRightSvg = () => {
   return (

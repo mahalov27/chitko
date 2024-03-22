@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from "./MockupViewer.module.scss";
 
-const MockupViewer = ({ mockup, styleProp, variable }) => {
+const MockupViewer = ({ mockup, styleProp, variable, unFixedWidth }) => {
   const [isIOS, setIsIOS] = useState(true);
 
   return (
-    <div className={styles.content}>
+    <div className={`${styles.content} ${unFixedWidth && styles.unFixedWidth}`}>
       <div className={`${styles.imgWrapper} ${styleProp && styleProp} ${variable && styles.large}`}>
         {Array.isArray(mockup) && mockup.map(item => {
           return (
