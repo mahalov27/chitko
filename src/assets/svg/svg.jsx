@@ -1,8 +1,8 @@
-export const BallSvg = () => {
+export const FootBallSvg = ({ style }) => {
   return (
     <svg
-      width="464"
-      height="464"
+      width={style ? style.width : "464"}
+      height={style ? style.height : "464"}
       viewBox="0 0 464 464"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +13,32 @@ export const BallSvg = () => {
         stroke="#FF3B30"
         strokeWidth="16"
         strokeDasharray="2 2"
+      />
+    </svg>
+  );
+};
+export const BasketBallSvg = ({ style }) => {
+  return (
+    <svg
+      width="464"
+      height="464"
+      viewBox="35 35 255 255"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="161.205"
+        cy="164.202"
+        r="121"
+        transform="rotate(23.2591 161.205 164.202)"
+        stroke="white"
+        stroke-width="8"
+      />
+      <path
+        d="M118.567 271.162L209.794 58.9189M48.515 203.799C68.2084 199.403 104.162 186.474 122.987 142.678C138.915 105.62 119.104 74.9302 112.229 55.5663M210.152 273.274C200.202 257.023 184.822 215.821 202.907 181.02C220.992 146.219 256.783 131.446 272.418 128.41"
+        stroke="white"
+        stroke-width="6"
+        stroke-dasharray="4 4"
       />
     </svg>
   );
@@ -56,8 +82,19 @@ export const SpringSmallOneSvg = () => {
 };
 export const SpringSmallTwoSvg = () => {
   return (
-    <svg width="571" height="385" viewBox="0 0 571 385" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M556.018 246.643C483.101 335.638 322.113 464.144 261.493 266.204C185.719 18.7779 384.581 -65.2261 373.057 101.881C361.533 268.987 118.124 373.363 77.0488 192.427C41.7639 36.9958 211.448 39.5564 199.16 114.789C185.623 197.662 14.5939 192.901 14.5939 192.901" stroke="#F24B27" stroke-width="28.6695" stroke-linecap="round"/>
+    <svg
+      width="571"
+      height="385"
+      viewBox="0 0 571 385"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M556.018 246.643C483.101 335.638 322.113 464.144 261.493 266.204C185.719 18.7779 384.581 -65.2261 373.057 101.881C361.533 268.987 118.124 373.363 77.0488 192.427C41.7639 36.9958 211.448 39.5564 199.16 114.789C185.623 197.662 14.5939 192.901 14.5939 192.901"
+        stroke="#F24B27"
+        stroke-width="28.6695"
+        stroke-linecap="round"
+      />
     </svg>
   );
 };

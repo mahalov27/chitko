@@ -1,6 +1,6 @@
 import googlePlayLinkIcon from "../../assets/image/png/googlePlayLink.png";
 import appStoreLinkIcon from "../../assets/image/png/appStoreLink.png";
-import { BallSvg } from "../../assets/svg/svg";
+import { BasketBallSvg } from "../../assets/svg/svg";
 import MockupViewer from "../MockupViewer/MockupViewer";
 import { mockups } from "./mockups";
 import styles from "./MainIdea.module.scss";
@@ -32,7 +32,7 @@ const MainIdea = () => {
       <div className={styles.blockContent}>
         <MockupViewer mockup={mockups} />
         <div className={styles.snowAnimation}>
-          <BallSvg />
+          <BasketBallSvg />
         </div>
       </div>
     </section>

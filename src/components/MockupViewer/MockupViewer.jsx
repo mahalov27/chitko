@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./MockupViewer.module.scss";
 
-const MockupViewer = ({ mockup, styleProp, variable, unFixedWidth }) => {
+const MockupViewer = ({ mockup, styleProp, variable, unFixedWidth, btnAlt }) => {
   const [isIOS, setIsIOS] = useState(true);
 
   return (
@@ -19,7 +19,7 @@ const MockupViewer = ({ mockup, styleProp, variable, unFixedWidth }) => {
       </div>
       <div className={styles.btnBlock}>
         <button
-          className={`${styles.btn} ${isIOS && styles.btnActive}`}
+          className={`${!btnAlt && `${styles.btn} ${isIOS && styles.btnActive}`} ${btnAlt && `${styles.btnAlt} ${isIOS && styles.btnAltActive}`}`}
           onClick={() => {
             setIsIOS(!isIOS);
           }}
@@ -27,7 +27,7 @@ const MockupViewer = ({ mockup, styleProp, variable, unFixedWidth }) => {
           iOS
         </button>
         <button
-          className={`${styles.btn} ${!isIOS && styles.btnActive}`}
+          className={`${!btnAlt && `${styles.btn} ${!isIOS && styles.btnActive}`} ${btnAlt && `${styles.btnAlt} ${!isIOS && styles.btnAltActive}`}`}
           onClick={() => {
             setIsIOS(!isIOS);
           }}

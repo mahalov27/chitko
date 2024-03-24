@@ -1,0 +1,104 @@
+.section {
+  display: block;
+  background-color: var(--color-green);
+  height: fit-content;
+  margin-bottom: -390px;
+  .container {
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 110px 80px 80px;
+    h1 {
+      font-family: var(--font-title);
+      font-style: italic;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 64px;
+      letter-spacing: 0%;
+    }
+    .one,
+    .two,
+    .three {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .text {
+        max-width: 640px;
+        padding: 174px 0 0 155px;
+        h2 {
+          font-family: var(--font-title);
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 44px;
+          letter-spacing: 0%;
+          margin-bottom: 32px;
+        }
+        p {
+          font-family: var(--font-default);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 145%;
+          letter-spacing: 0%;
+        }
+      }
+      .widget {
+        display: flex;
+        justify-content: flex-end;
+        width: var(--container-width - 645px);
+      }
+    }
+    .one {
+      top: -50px;
+      z-index: 3;
+    }
+    .two {
+      top: -200px;
+      z-index: 2;
+      justify-content: flex-start;
+      width: var(--container-width - 645px);
+      .text {
+        order: 2;
+        padding-top: 220px;
+        padding-left: 70px;
+      }
+      .widget {
+        order: 1;
+        padding-left: 155px;
+        .ballRed {
+          position: absolute;
+          top: -280px;
+          left: -180px;
+          animation: anim 15s linear infinite;
+          @keyframes anim {
+            from {
+              rotate: 0deg;
+            }
+            to {
+              rotate: 360deg;
+            }
+          }
+        }
+      }
+    }
+    .three {
+      top: -390px;
+      .text {
+        padding-top: 325px;
+      }
+      .ballWhite{
+        position: absolute;
+        top: -310px;
+        right: -195px;
+        animation: animRevers 15s linear infinite;
+        @keyframes animRevers {
+          from {
+            rotate: 0deg;
+          }
+          to {
+            rotate: -360deg;
+          }
+        }
+      }
+    }
+  }
+}

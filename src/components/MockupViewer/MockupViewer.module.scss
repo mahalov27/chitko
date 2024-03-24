@@ -34,7 +34,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    .btn {
+    .btn,
+    .btnAlt {
       width: 101px;
       height: 43px;
       border-radius: 50px;
@@ -52,6 +53,17 @@
     .btnActive {
       background: var(--color-green);
       color: var(--color-default);
+    }
+    .btnAlt{
+      border-color: var(--color-red);
+      background-color: var(--color-white);
+    }
+    .btnAltActive{
+      background-color: var(--color-red);
+      color: var(--color-white);
+      &:hover{
+        color: var(--color-white);
+      }
     }
   }
 }
