@@ -1,5 +1,5 @@
-@font-face{
-  font-family: 'AGLettericaCompressedC';
+@font-face {
+  font-family: "AGLettericaCompressedC";
   src: url(./assets/fonts/AGLettericaCompressedC_Italic.otf);
   src: url(./assets/fonts/AGLettericaCompressedC_Regular.otf);
 }
@@ -13,14 +13,14 @@
 }
 
 :root {
-  --color-default: #1B1B1B;
-  --color-red: #F24B27;
-  --color-green: #D2F24F;
-  --color-gark-green: #71832B;
-  --color-grey: #F0F0EC;
+  --color-default: #1b1b1b;
+  --color-red: #f24b27;
+  --color-green: #d2f24f;
+  --color-gark-green: #71832b;
+  --color-grey: #f0f0ec;
   --color-blue-grey: #648381;
-  --color-white: #F6F0F0;
-  --color-yellow: #EFF24F;
+  --color-white: #f6f0f0;
+  --color-yellow: #eff24f;
   --font-default: "Open Sans", sans-serif;
   --font-title: "AGLettericaCompressedC";
   --font-optional: "Manrope", sans-serif;
@@ -51,6 +51,10 @@ h5 {
 ul {
   list-style: none;
 }
-body{
-  background-color: #FCFCFC;
+body {
+  background-color: #fcfcfc;
+  height: 100vh;
+}
+main {
+  overflow-x: hidden;
 }
