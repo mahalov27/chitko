@@ -1,10 +1,12 @@
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { useTheme } from "./hooks/useTheme";
 import Layout from "./components/Layout/Layout";
 import MainPage from "./pages/mainPage/MainPage";
 import NotFoundPage from "./pages/notFoundPage/NotFoundPage";
 
 const App = () => {
+  useTheme()
   const location = useLocation();
  
   return (
