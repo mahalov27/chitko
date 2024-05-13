@@ -14,6 +14,7 @@ const Form = () => {
         <div className={styles.inputWrapper}>
           <input
             value={mail}
+              type="mail"
             onChange={(e) => {
               setMail(e.target.value);
             }}
